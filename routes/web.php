@@ -29,7 +29,7 @@ Route::middleware('auth')->group(function() {
     ->name('tweet.update.index');
     Route::put('/tweet/update/{tweetId}', \App\Http\Controllers\Tweet\Update\PutController::class)
     ->name('tweet.update.put');
-    Route::delete('/tweet/delete/{tweetId}', \App\Http\Controllers\Tweet\deleteController::class)
+    Route::delete('/tweet/delete/{tweetId}', \App\Http\Controllers\Tweet\DeleteController::class)
     ->name('tweet.delete');
 });
 
